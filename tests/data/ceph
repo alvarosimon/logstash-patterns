@@ -25,5 +25,18 @@ data = [
         'active_clean': '1033',
     }
 },
-
+{
+    "raw":"2015-03-26 11:58:21.838112 mon.0 10.141.15.1:6789/0 4287086 : cluster [INF] pgmap v4717061: 1088 pgs: 1088 active+clean; 36929 MB data, 107 GB used, 6590 GB / 6697 GB avail; 67205 B/s wr, 12 op/s",
+    "expected": {
+        "actwrite": 67205,
+        "actops": 12,
+        "volumedata": 36929000000,
+        "volumeused": 107000000000,
+        "volumeavail": 6590000000000, 
+        "volumetotal": 6697000000000,
+        'pgmapv': '4717061',
+        'pgs': '1088',
+        'active_clean': '1088',
+    }
+},
 ]
